@@ -1,6 +1,6 @@
 {
     "key": "group_57c8f4ae134b1",
-    "title": "Map - section",
+    "title": "Map",
     "fields": [
         {
             "key": "field_57c8f6032b32a",
@@ -97,6 +97,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "local": "php",
-    "modified": 1473231458
+    "modified": 1473999365
 }

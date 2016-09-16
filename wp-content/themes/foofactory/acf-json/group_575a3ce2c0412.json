@@ -1,6 +1,6 @@
 {
     "key": "group_575a3ce2c0412",
-    "title": "Picker - Elements",
+    "title": "Picker",
     "fields": [
         {
             "key": "field_575a3cf5da2e0",
@@ -273,9 +273,16 @@
     "location": [
         [
             {
+                "param": "post_status",
+                "operator": "==",
+                "value": "trash"
+            }
+        ],
+        [
+            {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "widget"
             }
         ]
     ],
@@ -287,5 +294,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473281457
+    "modified": 1474001268
 }

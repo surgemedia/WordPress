@@ -1,6 +1,6 @@
 {
     "key": "group_575a390f78a8b",
-    "title": "Object List - Element",
+    "title": "Object List",
     "fields": [
         {
             "key": "field_575a3a9085b11",
@@ -78,7 +78,9 @@
                 "4": "3 column",
                 "3": "4 column"
             },
-            "default_value": [],
+            "default_value": [
+
+            ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -105,7 +107,9 @@
                 "no-points": "No Points",
                 "dot-points": "Dot Points"
             },
-            "default_value": [],
+            "default_value": [
+
+            ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -131,5 +135,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473281402
+    "modified": 1474000206
 }

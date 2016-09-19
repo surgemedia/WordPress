@@ -1,6 +1,6 @@
 {
     "key": "group_575a3d16b7a47",
-    "title": "Tabs - Elements",
+    "title": "Tabs",
     "fields": [
         {
             "key": "field_577de5d21a376",
@@ -111,7 +111,8 @@
         [
             {
                 "param": "post_type",
-                "operator": "=="
+                "operator": "==",
+                "value": "post"
             }
         ]
     ],
@@ -123,5 +124,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473227713
+    "modified": 1473999625
 }

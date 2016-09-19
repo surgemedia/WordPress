@@ -1,6 +1,6 @@
 {
     "key": "group_575a369b061d6",
-    "title": "Slider - Element",
+    "title": "Slider",
     "fields": [
         {
             "key": "field_577ddee91e799",
@@ -234,7 +234,8 @@
         [
             {
                 "param": "post_type",
-                "operator": "=="
+                "operator": "==",
+                "value": "post"
             }
         ]
     ],
@@ -246,5 +247,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473227087
+    "modified": 1473999612
 }

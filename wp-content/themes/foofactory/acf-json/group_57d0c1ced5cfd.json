@@ -3,25 +3,6 @@
     "title": "Homepage Heading",
     "fields": [
         {
-            "key": "field_57d0c1e996d80",
-            "label": "Id",
-            "name": "id",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "#",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_57d0c1f396d81",
             "label": "Slides",
             "name": "slides",
@@ -110,5 +91,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473301656
+    "modified": 1474001673
 }

@@ -3,6 +3,7 @@
 			//Check the type oembed
 		    case 'video':
 		   			 if($vars['embed']){  ?> 
+		   			 
 				<div class="placeholder video" style="max-height:500px; height:<?php echo $vars['placeholder']['height'].'px'; ?>; background-size:cover; background-image:url('<?php echo $vars['placeholder']['url']; ?>')">
 <i class="icon-play"></i>
 				<iframe width="100%"  height="100%" src="https://www.youtube.com/embed/<?php echo getYtCode([

@@ -14,6 +14,8 @@ $custom_includes = [
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
    'lib/function-truncate_content.php',    // Scripts and stylesheets
    'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
+   'lib/function-getYoutubeId.php',    // Scripts and stylesheets
+
 ];
 
 function includeRequired($custom_includes){

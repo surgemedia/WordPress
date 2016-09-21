@@ -74,6 +74,7 @@
 	__webpack_require__(30);
 	__webpack_require__(32);
 	__webpack_require__(33);
+	__webpack_require__(35);
 
 	// TODO - Use NPM or BOWER
 	// Hammer js
@@ -7865,6 +7866,23 @@
 	})(window.Zepto || __webpack_provided_window_dot_jQuery, window, document);
 
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _jquery = __webpack_require__(17);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	(0, _jquery2.default)('.oembed .placeholder.video').on('click', function (event) {
+	  (0, _jquery2.default)(this).addClass('playing');
+	  (0, _jquery2.default)(this).find('iframe').attr('src', (0, _jquery2.default)(this).data('videourl'));
+	});
 
 /***/ }
 /******/ ]);

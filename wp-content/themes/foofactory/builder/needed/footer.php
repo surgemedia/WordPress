@@ -1,4 +1,5 @@
-<footer id="footer" class="content-info padding-6">
+
+<footer id="footer" class="content-info clearfix">
   <div class="container">
 		 <?php 
       get_component([

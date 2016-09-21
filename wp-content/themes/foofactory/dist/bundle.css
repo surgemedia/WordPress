@@ -5211,24 +5211,10 @@ button.close {
 /*============================
 =            Atom            =
 ============================*/
-@-webkit-keyframes MyAnimation {
-  0% {
-    left: 0; }
-  50% {
-    left: 200px; }
-  100% {
-    left: 20px; } }
-@keyframes MyAnimation {
-  0% {
-    left: 0; }
-  50% {
-    left: 200px; }
-  100% {
-    left: 20px; } }
-
 body {
-  -webkit-animation: MyAnimation 2s;
-          animation: MyAnimation 2s; }
+  opacity: 1;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all; }
 
 /*==================================
 =            Typograhpy            =
@@ -5260,20 +5246,10 @@ h2,
 h3 {
   font-size: 3.6em; }
 
-p {
+p, .p1 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 1.4em;
-  line-height: 1.7em; }
-
-h2, .h2 {
-  font-size: 6em; }
-
-.h3 {
-  font-size: 3.6em; }
-
-.p1 {
-  font-size: 6em;
   line-height: 1.7em; }
 
 .p2 {
@@ -5714,6 +5690,10 @@ section {
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.8); }
 
+.molecule {
+  display: inline-block;
+  width: 100%; }
+
 section {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -5778,7 +5758,7 @@ section {
     max-width: 100% !important; }
 
 /*================================
-=            Molecule            =
+=            elements            =
 ================================*/
 .btn, .search-form .search-submit {
   border: 1px solid #D2D2D2;
@@ -5855,7 +5835,7 @@ section {
     width: 100%; }
 
 /*================================
-=            Organism            =
+=            sections            =
 ================================*/
 .homepage-heading {
   min-height: 300px; }
@@ -5901,10 +5881,10 @@ section {
       font-size: 2em;
       padding: 1em; }
   .banner #logo {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     padding: 0;
     float: left;
-    max-height: 125px; }
+    max-height: 65px; }
   .banner #navbar {
     padding: 0px;
     background: #000;

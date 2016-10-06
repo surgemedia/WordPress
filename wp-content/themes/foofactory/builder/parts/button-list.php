@@ -1,6 +1,6 @@
 <?php 
  // debug($vars);
-if (is_array($vars)) {
+if (is_array($vars) && !empty($vars)) {
 $button_size= sizeof($vars);
 if (1<$button_size) : ?>
 <div class="button-list">
@@ -21,15 +21,31 @@ if (1<$button_size) : ?>
 				//file or media
 				$link = (!empty($button['archive_link'])) ? $button['archive_link'] : '#no-link';
 				break;
+			case 'reveal':
+				$randId= rand();
+				$link = "#reveal-".$randId;
+				$button['extra-data'] = "data-toggle='reveal'" ?>
+			  <div id="<?php echo "reveal-".$randId ?>" class="store">
+				  <?php  
+	               get_component([ 'template' => 'molecule/oembed',
+	               		            'vars' => $button['reveal_content']['oembed']
+	                               ]);
+	                               ?>
+			  </div>
+   
+
+		<?php		break;	
 			default:
 				$link = (!empty($button['link'])) ? $button['link'] : '#no-link';
 				break;
 		}  
-		if($button['create_other_window'])
+		if(!empty($button['create_other_window']))
 			$button['extra-data'] .=" target='_blank'";
 		?>
+		
 		<?php if(!isset($button['disabled']) OR true != $button['disabled']){ ?>
-		<a class="btn text-uppercase <?php echo $button['class']?>" href="<?php echo $link?>" <?php echo $button['extra-data'] ?>> <?php echo $button['text']; ?> </a>
+		<a class="btn text-uppercase <?php echo !empty($button['class'])?$button['class']:""?>" href="<?php echo $link?>" <?php echo !empty($button['extra-data'])?$button['extra-data']:"" ?>> <?php echo $button['text']; ?> </a>
+		
 			<?php } ?>
 		<?php } ?>
 <?php if (1<$button_size) : ?>

@@ -1,12 +1,32 @@
-![foofactory](https://github.com/stagfoo/Foofactory/blob/master/logo.png?raw=true)
+# WordPress
 
+This is a WordPress repository configured to run on the [Pantheon platform](https://www.getpantheon.com).
 
-This theme was created to as a simple bare bones theme thats using ACF, Webpack and Sass that can easily integrate with this builder  [Crate](https://github.com/stagfoo/Crate)
+Pantheon is website platform optimized and configured to run high performance sites with an amazing developer workflow. There is built-in support for features such as Varnish, redis, Apache Solr, New Relic, Nginx, PHP-FPM, MySQL, PhantomJS and more. 
 
-This theme will have slower upgrades aiming for once a month, while [Crate](https://github.com/stagfoo/Crate) will be faster and have more community additions (hopefully).
+## Getting Started
 
-We build this to help teach new coders whole to use tools like webpack and to include a standard way to include JavaScript instead of learning one theme's random way.
+### 1. Spin-up a site
 
-##Links
-- [Documentation](https://stagfoo.gitbooks.io/foofactory/content/)
-- [Crate](https://github.com/stagfoo/Crate)
+If you do not yet have a Pantheon account, you can create one for free. Once you've verified your email address, you will be able to add sites from your dashboard. Choose "WordPress" to use this distribution.
+
+### 2. Load up the site
+
+When the spin-up process is complete, you will be redirected to the site's dashboard. Click on the link under the site's name to access the Dev environment.
+
+![alt](http://i.imgur.com/2wjCj9j.png?1, '')
+
+### 3. Run the WordPress installer
+
+How about the WordPress database config screen? No need to worry about database connection information as that is taken care of in the background. The only step that you need to complete is the site information and the installation process will be complete.
+
+We will post more information about how this works but we recommend developers take a look at `wp-congfig.php` to get an understanding.
+
+![alt](http://i.imgur.com/4EOcqYN.png, '')
+
+If you would like to keep a separate set of configuration for local development, you can use a file called `wp-config-local.php`, which is already in our .gitignore file.
+
+### 4. Enjoy!
+
+![alt](http://i.imgur.com/DwFe35s.png, '')
+

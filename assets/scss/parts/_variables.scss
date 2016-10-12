@@ -1,0 +1,38 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$grid-float-breakpoint: 992px;
+
+// Colors
+$brand-primary:         #663699;
+
+$color1: #fdcc00;
+$color2: #F7F7F7;
+$color3: #D2D2D2;
+$color4: #CCCCCC;
+$color5: #808080;
+$color6: #404040;
+$color7: #000000;
+$overlay: rgba($color3,0.5);
+
+//Foofactory Colors
+
+
+$primary-font: 'Roboto',"Helvetica","Arial","sans-serif";
+
+//Example Color List
+$colorlist: (
+					red-dark: $color2,
+					red-light: $color4,
+					grey: $color5,
+					blue:$color1,
+					blue-dark:$color3,
+					overlay: $overlay,
+					white: #fff,
+
+);
+
+
